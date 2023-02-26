@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <a class="link-reset header__logo" href="#">
+                <img class="img header__logo-img" src="./images/header-logo.svg" alt="Логотип проекта Место">
+            </a>
+        </header>
+        <main class="main">
+            <section class="profile">
+                <img class="img profile__img" src="./images/avatar.png" alt="Фото профиля">
+                <div class="profile__info">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button class="btn-reset profile__edit-button"></button>
+                    <h2 class="profile__hobby">Исследователь океана</h2>
+                </div>
+                <button class="btn-reset profile__button profile__add-button">
+                </button>
+            </section>
+            <section class="photo-grid">
+                <figure class="photo-grid__figure">
+                    <img class="img" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                    <div class="card-info">
+                        <h3 class="card-info__name">Карачаевск</h3>
+                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                    </div>
+                </figure>
+                <figure class="photo-grid__figure">
+                    <img class="img" src="./images/mountain-elbrus.jpg" alt="Эльбрус">
+                    <div class="card-info">
+                        <h3 class="card-info__name">Гора Эльбрус</h3>
+                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                    </div>
+                </figure>
+                <figure class="photo-grid__figure">
+                    <img class="img" src="./images/dombai.jpg" alt="Домбай">
+                    <div class="card-info">
+                        <h3 class="card-info__name">Домбай</h3>
+                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                    </div>
+                </figure>
+                <figure class="photo-grid__figure">
+                    <img class="img" src="./images/mountain-elbrus.jpg" alt="Эльбрус">
+                    <div class="card-info">
+                        <h3 class="card-info__name">Гора Эльбрус</h3>
+                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                    </div>
+                </figure>
+                <figure class="photo-grid__figure">
+                    <img class="img" src="./images/dombai.jpg" alt="Домбай">
+                    <div class="card-info">
+                        <h3 class="card-info__name">Домбай</h3>
+                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                    </div>
+                </figure>
+                <figure class="photo-grid__figure">
+                    <img class="img" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                    <div class="card-info">
+                        <h3 class="card-info__name">Карачаево-Черкессия</h3>
+                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                    </div>
+                </figure>
+            </section>
+        </main>
+        <footer class="footer">
+            <span class="footer__copy">&copy;&nbsp;2023 Mesto Russia</span>
+        </footer>
+    </div>
+    <div id="popup" class="popup popup_opened">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close"></a>
+                <form class="form" method="POST">
+                    <h2 class="form__heading">Редактировать профиль</h2>
+                    <fieldset class="form__input-container">
+                        <input id="name" class="form__item form__item_name" name="name" type="text" placeholder="Имя"
+                            required>
+                        <input id="hobby" class="form__item form__item_hobby" name="hobby" type="text"
+                            placeholder="О себе" required>
+                        <button class="btn-reset form__button" type="submit">Сохранить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

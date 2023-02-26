@@ -1,0 +1,8 @@
+:root {
+    --color-light: rgba(255, 255, 255, 1);
+    --color-dark: rgba(0, 0, 0, 1);
+    --color-grey: rgba(84, 84, 84, 1);
+    --color-popup: rgba(0, 0, 0, .5);
+    --color-popup-line: rgba(0, 0, 0, .2);
+    --color-btn-hover: rgba(0, 0, 0, .8);
+}
