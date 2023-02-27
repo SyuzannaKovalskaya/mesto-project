@@ -21,55 +21,55 @@
                 <img class="img profile__img" src="./images/avatar.png" alt="Фото профиля">
                 <div class="profile__info">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <button class="btn-reset profile__edit-button"></button>
-                    <h2 class="profile__hobby">Исследователь океана</h2>
+                    <button class="btn-reset profile__edit-button" type="button"></button>
+                    <p class="profile__hobby">Исследователь океана</p>
                 </div>
-                <button class="btn-reset profile__button profile__add-button">
+                <button class="btn-reset profile__add-button" type="button">
                 </button>
             </section>
-            <section class="photo-grid">
-                <figure class="photo-grid__figure">
-                    <img class="img" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                    <div class="card-info">
-                        <h3 class="card-info__name">Карачаевск</h3>
-                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+            <section class="photo-grid" aria-label="Блок с фотографиями">
+                <article class="photo-grid__card">
+                    <img class="img photo-grid__img" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                    <div class="photo-grid__descr">
+                        <h3 class="photo-grid__name">Карачаевск</h3>
+                        <button class="btn-reset photo-grid__heart" type="button"></button>
                     </div>
-                </figure>
-                <figure class="photo-grid__figure">
-                    <img class="img" src="./images/mountain-elbrus.jpg" alt="Эльбрус">
-                    <div class="card-info">
-                        <h3 class="card-info__name">Гора Эльбрус</h3>
-                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                </article>
+                <article class="photo-grid__card">
+                    <img class="img photo-grid__img" src="./images/mountain-elbrus.jpg" alt="Эльбрус">
+                    <div class="photo-grid__descr">
+                        <h3 class="photo-grid__name">Гора Эльбрус</h3>
+                        <button class="btn-reset photo-grid__heart" type="button"></button>
                     </div>
-                </figure>
-                <figure class="photo-grid__figure">
-                    <img class="img" src="./images/dombai.jpg" alt="Домбай">
-                    <div class="card-info">
-                        <h3 class="card-info__name">Домбай</h3>
-                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                </article>
+                <article class="photo-grid__card">
+                    <img class="img photo-grid__img" src="./images/dombai.jpg" alt="Домбай">
+                    <div class="photo-grid__descr">
+                        <h3 class="photo-grid__name">Домбай</h3>
+                        <button class="btn-reset photo-grid__heart" type="button"></button>
                     </div>
-                </figure>
-                <figure class="photo-grid__figure">
-                    <img class="img" src="./images/mountain-elbrus.jpg" alt="Эльбрус">
-                    <div class="card-info">
-                        <h3 class="card-info__name">Гора Эльбрус</h3>
-                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                </article>
+                <article class="photo-grid__card">
+                    <img class="img photo-grid__img" src="./images/mountain-elbrus.jpg" alt="Эльбрус">
+                    <div class="photo-grid__descr">
+                        <h3 class="photo-grid__name">Гора Эльбрус</h3>
+                        <button class="btn-reset photo-grid__heart" type="button"></button>
                     </div>
-                </figure>
-                <figure class="photo-grid__figure">
-                    <img class="img" src="./images/dombai.jpg" alt="Домбай">
-                    <div class="card-info">
-                        <h3 class="card-info__name">Домбай</h3>
-                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                </article>
+                <article class="photo-grid__card">
+                    <img class="img photo-grid__img" src="./images/dombai.jpg" alt="Домбай">
+                    <div class="photo-grid__descr">
+                        <h3 class="photo-grid__name">Домбай</h3>
+                        <button class="btn-reset photo-grid__heart" type="button"></button>
                     </div>
-                </figure>
-                <figure class="photo-grid__figure">
-                    <img class="img" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                    <div class="card-info">
-                        <h3 class="card-info__name">Карачаево-Черкессия</h3>
-                        <img src="./images/heart.svg" class="card-info__heart" alt="Сердечко">
+                </article>
+                <article class="photo-grid__card">
+                    <img class="img photo-grid__img" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                    <div class="photo-grid__descr">
+                        <h3 class="photo-grid__name">Карачаево-Черкессия</h3>
+                        <button class="btn-reset photo-grid__heart" type="button"></button>
                     </div>
-                </figure>
+                </article>
             </section>
         </main>
         <footer class="footer">
@@ -77,20 +77,18 @@
         </footer>
     </div>
     <div id="popup" class="popup popup_opened">
-        <div class="popup__body">
-            <div class="popup__content">
-                <a href="#" class="popup__close"></a>
-                <form class="form" method="POST">
-                    <h2 class="form__heading">Редактировать профиль</h2>
-                    <fieldset class="form__input-container">
-                        <input id="name" class="form__item form__item_name" name="name" type="text" placeholder="Имя"
-                            required>
-                        <input id="hobby" class="form__item form__item_hobby" name="hobby" type="text"
-                            placeholder="О себе" required>
-                        <button class="btn-reset form__button" type="submit">Сохранить</button>
-                    </fieldset>
-                </form>
-            </div>
+        <div class="popup__container">
+            <button class="btn-reset popup__close" type="button"></button>
+            <form class="form" name="form" method="POST">
+                <h2 class="form__heading">Редактировать профиль</h2>
+                <fieldset class="form__input-container">
+                    <input id="name" class="form__item form__item_type_name" name="name" type="text" placeholder="Имя"
+                        required>
+                    <input id="hobby" class="form__item form__item_type_hobby" name="hobby" type="text"
+                        placeholder="О себе" required>
+                </fieldset>
+                <button class="btn-reset form__button" type="submit">Сохранить</button>
+            </form>
         </div>
     </div>
 </body>

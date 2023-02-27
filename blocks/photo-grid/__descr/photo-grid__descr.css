@@ -1,0 +1,9 @@
+.photo-grid__descr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 246px;
+}

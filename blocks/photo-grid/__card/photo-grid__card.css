@@ -1,8 +1,7 @@
-.photo-grid__figure {
+.photo-grid__card {
     margin: 0 auto;
     width: 282px;
     background-color: var(--color-light);
     border-radius: 10px;
     overflow: hidden;
-    max-height: 361px;
 }

@@ -1,8 +1,15 @@
 .form__input-container {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 46px 0 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+    .form__input-container {
+        margin-top: 75px;
+    }
 }

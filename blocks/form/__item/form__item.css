@@ -4,4 +4,6 @@
     font-size: 14px;
     line-height: 17px;
     box-sizing: border-box;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-popup-line);
 }
