@@ -5,11 +5,11 @@
     background-image: url(../../../images/heart.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .photo-grid__heart:hover {
-    background-image: url(../../../images/heart-hover.svg);
+    opacity: 0.5;
 }
 
 .photo-grid__heart:active {
